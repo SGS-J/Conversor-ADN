@@ -1,4 +1,4 @@
-package adnconversor.controller;
+package controller;
 
 import adnconversor.graphics.Window;
 import java.awt.EventQueue;
