@@ -1,4 +1,4 @@
-package adnconversor.exceptions;
+package dnaconversor.exceptions;
 
 import java.io.IOException;
 

@@ -1,7 +1,7 @@
-package adnconversor.logic.mainlogic.functions;
+package dnaconversor.logic.mainlogic.functions;
 
-import adnconversor.logic.mainlogic.Codon;
-import adnconversor.logic.mainlogic.NitroBase;
+import dnaconversor.logic.mainlogic.Codon;
+import dnaconversor.logic.mainlogic.NitroBase;
 import java.util.ArrayList;
 
 public class ParserFunction implements NucleicAcidParser{

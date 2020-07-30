@@ -1,8 +1,8 @@
-package adnconversor.logic.mainlogic;
+package dnaconversor.logic.mainlogic;
 
-import adnconversor.logic.mainlogic.functions.NucleicAcidParser;
-import adnconversor.logic.mainlogic.functions.ParserFunction;
-import adnconversor.exceptions.NucleicAcidParseException;
+import dnaconversor.logic.mainlogic.functions.NucleicAcidParser;
+import dnaconversor.logic.mainlogic.functions.ParserFunction;
+import dnaconversor.exceptions.NucleicAcidParseException;
 import java.util.ArrayList;
 
 public class RNA extends NucleicAcid {

@@ -1,7 +1,7 @@
-package adnconversor.graphics;
+package dnaconversor.graphics;
 
-import adnconversor.logic.jframelogic.*;
-import adnconversor.logic.mainlogic.*;
+import dnaconversor.logic.jframelogic.*;
+import dnaconversor.logic.mainlogic.*;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.KeyEvent;

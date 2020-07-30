@@ -1,6 +1,6 @@
-package adnconversor.logic.mainlogic;
+package dnaconversor.logic.mainlogic;
 
-import adnconversor.exceptions.*;
+import dnaconversor.exceptions.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 

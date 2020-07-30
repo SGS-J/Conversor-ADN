@@ -1,6 +1,6 @@
-package adnconversor.logic.mainlogic.functions;
+package dnaconversor.logic.mainlogic.functions;
 
-import adnconversor.logic.mainlogic.Codon;
+import dnaconversor.logic.mainlogic.Codon;
 
 public interface NucleicAcidParser {
     java.util.ArrayList<Codon> parse(String stringNucleicAcid);

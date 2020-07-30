@@ -1,4 +1,4 @@
-package adnconversor.logic.mainlogic.functions;
+package dnaconversor.logic.mainlogic.functions;
 
 public interface Verificator {
     String verifyLetters();

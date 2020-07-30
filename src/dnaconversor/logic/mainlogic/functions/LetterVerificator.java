@@ -1,6 +1,6 @@
-package adnconversor.logic.mainlogic.functions;
+package dnaconversor.logic.mainlogic.functions;
 
-import adnconversor.logic.mainlogic.GeneticCode;
+import dnaconversor.logic.mainlogic.GeneticCode;
 import java.util.Arrays;
 
 public class LetterVerificator implements Verificator {

@@ -1,7 +1,7 @@
-package adnconversor.logic.mainlogic;
+package dnaconversor.logic.mainlogic;
 
-import adnconversor.exceptions.IncompatibleAminoAcidCharExc;
-import adnconversor.logic.mainlogic.caseForms.CaseForm;
+import dnaconversor.exceptions.IncompatibleAminoAcidCharExc;
+import dnaconversor.logic.mainlogic.caseForms.CaseForm;
 
 public enum AminoAcid {
 

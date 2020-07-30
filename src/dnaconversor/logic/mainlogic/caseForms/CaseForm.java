@@ -1,4 +1,4 @@
-package adnconversor.logic.mainlogic.caseForms;
+package dnaconversor.logic.mainlogic.caseForms;
 
 public @interface CaseForm {
     String PHE_CASE[] = {"UUU", "UUC"};

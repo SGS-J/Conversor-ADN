@@ -1,6 +1,6 @@
-package adnconversor.logic.mainlogic;
+package dnaconversor.logic.mainlogic;
 
-import adnconversor.exceptions.*;
+import dnaconversor.exceptions.*;
 
 /**
  * Represents a <strong>Nitrogenous Bases</strong> of

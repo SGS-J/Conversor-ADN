@@ -1,4 +1,4 @@
-package adnconversor.logic.mainlogic;
+package dnaconversor.logic.mainlogic;
 
 import java.util.ArrayList;
 import java.util.Arrays;

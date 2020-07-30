@@ -1,9 +1,9 @@
-package adnconversor.logic.mainlogic;
+package dnaconversor.logic.mainlogic;
 
-import adnconversor.logic.mainlogic.functions.NucleicAcidParser;
-import adnconversor.logic.mainlogic.functions.ParserFunction;
+import dnaconversor.logic.mainlogic.functions.NucleicAcidParser;
+import dnaconversor.logic.mainlogic.functions.ParserFunction;
 import java.util.ArrayList;
-import adnconversor.exceptions.NucleicAcidParseException;
+import dnaconversor.exceptions.NucleicAcidParseException;
 
 public class DNA extends NucleicAcid {
 

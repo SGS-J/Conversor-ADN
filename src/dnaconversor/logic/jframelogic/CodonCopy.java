@@ -1,6 +1,6 @@
-package adnconversor.logic.jframelogic;
+package dnaconversor.logic.jframelogic;
 
-import adnconversor.exceptions.IncompatibleCodonCharException;
+import dnaconversor.exceptions.IncompatibleCodonCharException;
 
 public class CodonCopy {
 

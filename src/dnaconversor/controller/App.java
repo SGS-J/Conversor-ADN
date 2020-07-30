@@ -1,6 +1,6 @@
 package dnaconversor.controller;
 
-import adnconversor.graphics.Window;
+import dnaconversor.graphics.Window;
 import java.awt.EventQueue;
 
 public class App {

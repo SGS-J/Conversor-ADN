@@ -1,4 +1,4 @@
-package adnconversor.logic.jframelogic;
+package dnaconversor.logic.jframelogic;
 
 public class CodonTyper {
 

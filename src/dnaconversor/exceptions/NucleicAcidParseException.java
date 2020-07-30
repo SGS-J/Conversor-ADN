@@ -1,4 +1,4 @@
-package adnconversor.exceptions;
+package dnaconversor.exceptions;
 
 public class NucleicAcidParseException extends ADNConversorExceptions{
 

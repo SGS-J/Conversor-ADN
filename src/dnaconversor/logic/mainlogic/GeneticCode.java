@@ -1,7 +1,7 @@
-package adnconversor.logic.mainlogic;
+package dnaconversor.logic.mainlogic;
 
-import adnconversor.logic.mainlogic.functions.LetterVerificator;
-import adnconversor.logic.mainlogic.functions.Verificator;
+import dnaconversor.logic.mainlogic.functions.LetterVerificator;
+import dnaconversor.logic.mainlogic.functions.Verificator;
 import java.util.ArrayList;
 
 public class GeneticCode {
