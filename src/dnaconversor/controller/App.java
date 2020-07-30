@@ -1,4 +1,4 @@
-package controller;
+package dnaconversor.controller;
 
 import adnconversor.graphics.Window;
 import java.awt.EventQueue;
