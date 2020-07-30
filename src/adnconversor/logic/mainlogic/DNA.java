@@ -5,10 +5,6 @@ import adnconversor.logic.mainlogic.functions.ParserFunction;
 import java.util.ArrayList;
 import adnconversor.exceptions.NucleicAcidParseException;
 
-/**
- *
- * @author usuario
- */
 public class DNA extends NucleicAcid {
 
     private static NucleicAcidParser parser;

@@ -4,10 +4,6 @@ import adnconversor.logic.mainlogic.functions.LetterVerificator;
 import adnconversor.logic.mainlogic.functions.Verificator;
 import java.util.ArrayList;
 
-/**
- *
- * @author usuario
- */
 public class GeneticCode {
 
     private ArrayList<AminoAcid> aminoAcids;

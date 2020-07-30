@@ -1,9 +1,5 @@
 package adnconversor.logic.jframelogic;
 
-/**
- *
- * @author usuario
- */
 public class CodonTyper {
 
     private static char charOfCodon;

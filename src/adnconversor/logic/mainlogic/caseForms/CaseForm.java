@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package adnconversor.logic.mainlogic.caseForms;
 
-/**
- *
- * @author usuario
- */
 public @interface CaseForm {
     String PHE_CASE[] = {"UUU", "UUC"};
     String LEU_CASE[] = {"UUA", "UUG", "CUU", "CUC", "CUA", "CUG"};

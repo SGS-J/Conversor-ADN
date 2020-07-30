@@ -2,15 +2,12 @@ package adnconversor.logic.jframelogic;
 
 import adnconversor.exceptions.IncompatibleCodonCharException;
 
-/**
- *
- * @author usuario
- */
 public class CodonCopy {
 
     private static String textToVerify = "";
     private static boolean validChars;
 
+    // Make this class cannot create an instance
     private CodonCopy() {
     }
 

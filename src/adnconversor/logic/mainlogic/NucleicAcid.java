@@ -3,10 +3,6 @@ package adnconversor.logic.mainlogic;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
- *
- * @author usuario
- */
 public abstract class NucleicAcid{
     
     private ArrayList<Codon> codons;

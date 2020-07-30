@@ -1,9 +1,5 @@
 package adnconversor.exceptions;
 
-/**
- *
- * @author usuario
- */
 public class IllegalNitroBaseLenghtException extends CodonDeclarationException {
     
     public IllegalNitroBaseLenghtException() {
