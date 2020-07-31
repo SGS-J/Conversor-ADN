@@ -5,12 +5,13 @@ import javax.swing.*;
 import java.awt.event.KeyEvent;
 import conversoradn.logic.mainlogic.*;
 import conversoradn.logic.jframelogic.*;
+import java.io.Serializable;
 
 /**
  * Clase principal de la ventana
  * @author SGS-J
  */
-public class Window extends javax.swing.JFrame {
+public class Window extends javax.swing.JFrame implements Serializable{
 
     private static final long serialVersionUID = 101L;
 

@@ -3,7 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/usuario/Desktop/Santiago/ADN%20Conversor/src/dnaconversor/controller/App.java</file>
+            <file>file:/C:/Users/usuario/Desktop/Santiago/ADN%20Conversor/src/conversoradn/excepciones/ConversorADNExcepciones.java</file>
+            <file>file:/C:/Users/usuario/Desktop/Santiago/ADN%20Conversor/src/conversoradn/logic/mainlogic/NitroBase.java</file>
+            <file>file:/C:/Users/usuario/Desktop/Santiago/ADN%20Conversor/src/conversoradn/graphics/Window.java</file>
+            <file>file:/C:/Users/usuario/Desktop/Santiago/ADN%20Conversor/src/conversoradn/controller/App.java</file>
+            <file>file:/C:/Users/usuario/Desktop/Santiago/ADN%20Conversor/src/conversoradn/logic/mainlogic/Codon.java</file>
+            <file>file:/C:/Users/usuario/Desktop/Santiago/ADN%20Conversor/src/conversoradn/excepciones/FalloDeclaracionCodigoGenetico.java</file>
         </group>
     </open-files>
 </project-private>
