@@ -10,6 +10,7 @@ public class ConversorADNExcepciones extends IOException implements Serializable
     String NOMBRE_EXCEPCION;
     
     public ConversorADNExcepciones() {
+        this("");
     }
 
     public ConversorADNExcepciones(String message) {
