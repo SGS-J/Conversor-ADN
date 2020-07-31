@@ -53,7 +53,7 @@ public class RNA extends NucleicAcid {
                 }
                 i++;
             }
-            //** Creates a replicated Codon form for the rna replicated **//
+            //** Creando un y añadiendo el Codon replicado **//
             NitroBase[] nitRep = new NitroBase[nitRepList.size()];
             nitRep = nitRepList.toArray(nitRep);
             Codon codonRep = Codon.createWithArray(nitRep);

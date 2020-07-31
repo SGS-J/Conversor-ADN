@@ -46,7 +46,7 @@ public class DNA extends NucleicAcid {
                 }
                 i++;
             }
-            //** Creates a replicated Codon form for the dna replicated **//
+            //** Creando y añadiendo el Codon replicado **//
             NitroBase[] nitRep = new NitroBase[nitRepList.size()];
             nitRep = nitRepList.toArray(nitRep);
             Codon codonRep = Codon.createWithArray(nitRep);
@@ -60,11 +60,11 @@ public class DNA extends NucleicAcid {
         RNA dnaTranscribed = RNA.createWithDNA(replicate());
 
         if (!dnaTranscribed.toString().contains("T")) {
-            // If no contains the letter T simply returns the object
+            // Si no contiene la letra T simplemente retorna el objeto
             return dnaTranscribed = RNA.parse(dnaTranscribed.toString()
                     .replace(" ", ""));
         } else {
-            // Else replace the char T to U and return it
+            // Caso contrario la remplaza por una U
             return dnaTranscribed = RNA.parse(dnaTranscribed.toString()
                     .replace("T", "U").replace(" ", ""));
         }

@@ -7,21 +7,70 @@ import javax.swing.*;
 import java.awt.event.KeyEvent;
 
 /**
- * Principal window JFrame class 
- * @author usuario
+ * Clase principal de la ventana
+ * @author SGS-J
  */
 public class Window extends javax.swing.JFrame {
 
     private static final long serialVersionUID = 101L;
 
     /**
-     * Creates new form Window
+     * Verifica si la tecla retroceso esta siendo presionada, en ese caso
+     * evita que el metodo <code>verifyCodon</code> se ejecute.
      */
+    private boolean isDeleting = false;
+    /**
+     * Verifica si una tecla invalida no fue presionada siempre y cuando el
+     * metodo <code>verifyCodon</code> no haya puesto un espacio.
+     */
+    private boolean invalidKeyTyped = false;
+    /**
+     * Verifica si el texto inicial del <code>copyTextField</code> fue borrado
+     */
+    private boolean textFieldTextErased = false;
+   
+    private String empty_message = "";
+    private final String errorMessageTextArea = "Please type a DNA string on the text area";
+    private final String errorMessageTextField = "Please copy a DNA string on the text field";
+    private final String defaultMessageTextField = "Copy the DNA String here...";
+    private final String copyFailedLabelMessage = "Invalid text copied!"
+
+    // ----- JComponent variables -----
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel ButtonPanel;
+    private javax.swing.JPanel Canvas;
+    private javax.swing.JButton btnCopyString;
+    private javax.swing.JButton btnDelete;
+    private javax.swing.JButton btnReplicate;
+    private javax.swing.JButton btnReturn;
+    private javax.swing.JButton btnTranscribe;
+    private javax.swing.JButton btnTranslate;
+    private javax.swing.JButton btnTyperString;
+    private javax.swing.JLabel copyFailedLabel;
+    private javax.swing.JTextField copyTextField;
+    private javax.swing.JPanel copyTextFieldPanel;
+    private javax.swing.JPanel defaultPanel;
+    private javax.swing.JTextArea displayArea;
+    private javax.swing.JScrollPane displayAreaScroll;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel rightBtnsPanel;
+    private javax.swing.JPanel topPanel;
+    private javax.swing.JTextArea typerArea;
+    private javax.swing.JScrollPane typerAreaScroll;
+    private javax.swing.JPanel typerPanel;
+    // End of variables declaration//GEN-END:variables
+
     public Window() {
         initComponents();
         initWindow();
     }
 
+    // ***** CODIGO GENERADOO POR NETBEANS *****
+    //    Por favor por el momento NO TOCAR!!!  
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -292,7 +341,7 @@ public class Window extends javax.swing.JFrame {
     private void initPanels() {
         rightBtnsPanel.setVisible(false);
         Canvas.add(typerPanel);
-        // Add the components to the top panel of typerPanel
+        // Añadimos componentes al Top Panel 
         topPanel.add(typerAreaScroll);
         topPanel.add(copyTextFieldPanel);
         typerAreaScroll.setVisible(false);
@@ -336,16 +385,15 @@ public class Window extends javax.swing.JFrame {
     }
 
     /**
-     * Returns <code>true</code> if the textArea or textField text 
-     * isn't contains a Codon character string and shows a JOptionPan dialog.
+     * Retorna <code>true</code> si el texto del textArea o del textField  
+     * no contiene una cadena de texto "<code>Codon</code>" y muestra un JOptionPane
+     * para reportar el error.
      *
-     * @return true if the components its empty
+     * @return true si los componentes no tienen texto
      */
     private boolean textEmpty() {
-        // Get the text without backspaces from the text area
         boolean isEmpty = typerArea.getText().isEmpty() && copyTextField.getText().isEmpty();
         if (isEmpty) {
-            // Shows a JOptionPane alert dialog
             JOptionPane.showMessageDialog(null, empty_message, "", JOptionPane.WARNING_MESSAGE);
         }
         return isEmpty;
@@ -402,7 +450,7 @@ public class Window extends javax.swing.JFrame {
         }
     }
 
-    // To prevent to type invalid keys and control the delete of typerArea
+    // Previene la escritura de teclas invalidas y verifica si se presiona la tecla retroceso
     private void typerAreaKeyPressed(java.awt.event.KeyEvent evt) {
         if (evt.getExtendedKeyCode() == KeyEvent.VK_ENTER
                 || evt.getExtendedKeyCode() == KeyEvent.VK_SPACE) {
@@ -518,58 +566,5 @@ public class Window extends javax.swing.JFrame {
         }
     }
 
-    // ----- Own variables -----
-    /**
-     * To check if the text of "typerArea" is being deleting so the
-     * "verifyCodon" method doesn't check if there is a codon
-     */
-    private boolean isDeleting = false;
-    /**
-     * To check if a "invalid key" has been typed so the "verifyCodon" method
-     * doesn't put a space(" ")
-     */
-    private boolean invalidKeyTyped = false;
-    /**
-     * Verificator of the textFieldCopy if the default text is deleted
-     */
-    private boolean textFieldTextErased = false;
-    /**
-     * The string that can be showed in the alert dialog
-     */
-    private String empty_message = "";
-    private final String errorMessageTextArea = "Please type a DNA string on the text area";
-    private final String errorMessageTextField = "Please copy a DNA string on the text field";
-    private final String defaultMessageTextField = "Copy the DNA String here...";
-    private final String copyFailedLabelMessage = "Invalid text copied!";
-    // ----- End of my own variables -----
-
-
-    // ----- JComponent variables -----
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel ButtonPanel;
-    private javax.swing.JPanel Canvas;
-    private javax.swing.JButton btnCopyString;
-    private javax.swing.JButton btnDelete;
-    private javax.swing.JButton btnReplicate;
-    private javax.swing.JButton btnReturn;
-    private javax.swing.JButton btnTranscribe;
-    private javax.swing.JButton btnTranslate;
-    private javax.swing.JButton btnTyperString;
-    private javax.swing.JLabel copyFailedLabel;
-    private javax.swing.JTextField copyTextField;
-    private javax.swing.JPanel copyTextFieldPanel;
-    private javax.swing.JPanel defaultPanel;
-    private javax.swing.JTextArea displayArea;
-    private javax.swing.JScrollPane displayAreaScroll;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JPanel rightBtnsPanel;
-    private javax.swing.JPanel topPanel;
-    private javax.swing.JTextArea typerArea;
-    private javax.swing.JScrollPane typerAreaScroll;
-    private javax.swing.JPanel typerPanel;
-    // End of variables declaration//GEN-END:variables
+    
 }

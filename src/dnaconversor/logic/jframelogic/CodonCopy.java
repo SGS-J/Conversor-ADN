@@ -7,7 +7,7 @@ public class CodonCopy {
     private static String textToVerify = "";
     private static boolean validChars;
 
-    // Make this class cannot create an instance
+    // Hace la clase imposible de instanciar
     private CodonCopy() {
     }
 

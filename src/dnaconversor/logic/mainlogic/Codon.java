@@ -5,15 +5,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * A class that represents a Codon of DNA strings.<p>
- * <strong>REMEMBER!</strong> To instantiate this class you must use the static
- * methods <code>
+ * Esta clase representa Codones de cadenas de ADN.<p>
+ * <strong>Recordar!</strong> Para instanciar la clase debes usar los
+ * siguientes metodos estaticos <code>
  * createWithChars,
  * createWithArray,
  * createWithOneBase,
- * createWithTwoBases </code> and
+ * createWithTwoBases </code> y
  * <code>createWithThreeBases
- * </code> methods(keep it in mind you can instantiate with a default constructor).
+ * </code>
  * 
  * @author SGS-J
  */
@@ -22,11 +22,7 @@ public class Codon {
     private ArrayList<NitroBase> nitroBases;
     private boolean isCompleteCodon;
     
-    /*
-      Sets a private access to the all constructors(except default),
-      the object Codon can be created with the static predefined methods
-      below the constructors.
-     */
+    // Constructor por defecto activado, el resto es privado.
     public Codon() {
        nitroBases = new ArrayList<>();
     }
@@ -70,7 +66,7 @@ public class Codon {
         isCompleteCodon = adder.length == 3;
     }
     
-    // ----- Methods declarated to create this object ----- 
+    // ----- Metodos para crear el objeto ----- 
     public static Codon createWithArray(NitroBase[] nitrogenousBases) {
         return new Codon(nitrogenousBases);
     }
@@ -90,7 +86,7 @@ public class Codon {
     public static Codon createWithChars(char[] charNitroBase) {
         return new Codon(charNitroBase);
     }
-    // ----- End of create object methods declaration -----
+    // ----- Fin declararcion de metodos de instanciacion -----
 
     public ArrayList<NitroBase> getNitroBases() {
         return nitroBases;

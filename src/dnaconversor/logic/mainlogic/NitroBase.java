@@ -3,8 +3,9 @@ package dnaconversor.logic.mainlogic;
 import dnaconversor.exceptions.*;
 
 /**
- * Represents a <strong>Nitrogenous Bases</strong> of
- * a codon string in Nucleic Acids(DNA & RNA)
+ * Esta clase representa las <strong>Bases nitrogenadas</strong> 
+ * de un <code>Codon</code> en una cadena de Acido Nucleico
+ * (ADN y ARN).
  * 
  * @author SGS-J
  */
@@ -66,20 +67,20 @@ public enum NitroBase {
     }
 
     public static NitroBase[] parse(char[] nitroBaseLetter) {
-        // create a NitroBase array to add to codon
+        // Crea un arrglo de bases nitrogenadas para añadir al codon
         NitroBase[] nitroBaseAdder = new NitroBase[3];
         try {
-            // verify the char array, and throw exception if is necessary
+            // Verifica la longitud y lanza una excepcion si es necesario
             if (nitroBaseLetter.length > 3) {
                 throw new IllegalNitroBaseLenghtException(
                         "Invalid codon lenght!"
                 );
             }
 
-            // iterator for the already said object NitroBase
+            // Iterador para el arreglo
             int i = 0;
             for (char letterOfNitroBase : nitroBaseLetter) {
-                // convert to Upper case if is necessary
+                // Convierte a mayuscula si es necesario
                 Character.toUpperCase(letterOfNitroBase);
                 switch (letterOfNitroBase) {
                     case 'A':
@@ -98,7 +99,6 @@ public enum NitroBase {
                         nitroBaseAdder[i] = NitroBase.URACIL;
                         break;
                     default:
-                        // The value is invalid, throw an exception
                         throw new IncompatibleCodonCharException(
                                 "Incompatible chars typed in the codon"
                         );

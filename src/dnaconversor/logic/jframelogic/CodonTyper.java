@@ -4,7 +4,7 @@ public class CodonTyper {
 
     private static char charOfCodon;
 
-    // Make this class cannot create an instance
+    // Hace la clase imposible de instanciar
     private CodonTyper() {
     }
 
